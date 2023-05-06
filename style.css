@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Konkhmer Sleokchher", cursive;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.25s;
+}
+
+#modal_btn {
+    padding: 3px 8px;
+    border: 1px solid rgb(199, 181, 137);
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.25s;
+}
+
+#modal_btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.close {
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal_backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 1, 0.2);
+}
+
+.modal_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content {
+    width: 800px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+.modal_content__item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal_content__item input {
+    width: 450px;
+    padding: 5px 7px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(199, 181, 137);
+    font-size: 18px;
+}
+
+.modal_content__item textarea {
+    padding: 5px 7px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(199, 181, 137);
+    font-size: 18px;
+    resize: none;
+}
+
+.modal_content button {
+    padding: 5px 10px;
+    border: 1px solid rgb(199, 181, 137);
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.25s;
+}
+
+.modal_content .disabled {
+    background-color: #abaaaa;
+}
+
+.modal_content .disabled:hover {
+    opacity: 1;
+    cursor: not-allowed;
+    border-radius: 0px;
+}
+
+.modal_content button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#search {
+    width: 450px;
+    padding: 5px 7px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(199, 181, 137);
+    font-size: 18px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.posts_title {
+    font-size: 36px;
+}
+
+.posts_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.post_item {
+    border: 1px solid rgb(205, 192, 160);
+    padding: 10px;
+    border-radius: 12px;
+    transition: all 0.25s;
+}
+
+.post_item:hover {
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.post_item__title {
+    font-size: 20px;
+    font-weight: 700;
+    height: 30px;
+    overflow-y: hidden;
+}
+
+.post_item__body {
+    font-size: 18px
+}
+
+.pagination {
+    display: flex
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+}
+
+.pagination_btn {
+    padding: 5px 10px;
+    border: 1px solid rgb(199, 181, 137);
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 0.25s;
+    border-radius: 15px;
+    width: 200px;
+}
+
+.pagination_btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
